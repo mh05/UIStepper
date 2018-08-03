@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Eo-AA-atV" customClass="UIStepperController">
+                                <rect key="frame" x="57" y="251" width="250" height="77"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZW-jT-xUW" customClass="UIStepperController">
+                                <rect key="frame" x="42" y="416" width="291" height="47"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="we9-iF-9KU" customClass="UIStepperController">
+                                <rect key="frame" x="34" y="570" width="316" height="47"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7m-rC-Udy" customClass="UIStepperController">
+                                <rect key="frame" x="66" y="143" width="233" height="47"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="we9-iF-9KU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="570" id="4pZ-81-6c0"/>
+                            <constraint firstItem="CZW-jT-xUW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="8qA-IQ-n88"/>
+                            <constraint firstItem="m7m-rC-Udy" firstAttribute="centerX" secondItem="9Eo-AA-atV" secondAttribute="centerX" id="C7v-14-xjE"/>
+                            <constraint firstItem="9Eo-AA-atV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="251" id="DSj-5N-N0G"/>
+                            <constraint firstItem="CZW-jT-xUW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DVz-hC-2pa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Eo-AA-atV" secondAttribute="trailing" constant="52" id="Jb5-F5-ci9"/>
+                            <constraint firstItem="CZW-jT-xUW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="416" id="Knr-x9-xjN"/>
+                            <constraint firstItem="9Eo-AA-atV" firstAttribute="top" secondItem="m7m-rC-Udy" secondAttribute="bottom" constant="61" id="LME-XQ-75d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="we9-iF-9KU" secondAttribute="bottom" constant="50" id="Loc-rJ-RQi"/>
+                            <constraint firstAttribute="bottom" secondItem="CZW-jT-xUW" secondAttribute="bottom" constant="204" id="NYa-OM-t1i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="we9-iF-9KU" secondAttribute="trailing" constant="9" id="Neg-vw-rWt"/>
+                            <constraint firstItem="we9-iF-9KU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="UhT-9l-30b"/>
+                            <constraint firstItem="CZW-jT-xUW" firstAttribute="top" secondItem="9Eo-AA-atV" secondAttribute="bottom" constant="88" id="Yf4-3d-CA2"/>
+                            <constraint firstItem="m7m-rC-Udy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="jNa-NM-yVM"/>
+                            <constraint firstItem="m7m-rC-Udy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="123" id="lX0-7j-zgB"/>
+                            <constraint firstItem="9Eo-AA-atV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="ugr-bl-CfJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stepper2" destination="m7m-rC-Udy" id="PmP-k5-uGj"/>
+                        <outlet property="stepper3" destination="9Eo-AA-atV" id="csa-3B-B1V"/>
+                        <outlet property="stepper4" destination="CZW-jT-xUW" id="3lO-n8-Bu6"/>
+                        <outlet property="stepper5" destination="we9-iF-9KU" id="YRg-PA-Hf6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-0.80000000000000004" y="-0.44977509999999998"/>
+        </scene>
+    </scenes>
+</document>
