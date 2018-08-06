@@ -1,4 +1,4 @@
-# UIStepper
+# UIStepperController
 
 This is an Xamarin iOS port of [UIStepperController](https://github.com/NadeeshanEngineering/UIStepperController) created by [NadeeshanEngineering](https://github.com/NadeeshanEngineering);All credits goes to him 
 
