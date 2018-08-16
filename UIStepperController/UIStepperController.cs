@@ -218,10 +218,10 @@ namespace UIStepController
             _subtractionButtonImage.TranslatesAutoresizingMaskIntoConstraints = false;
             _subtractionButtonView.AddConstraints(new[]
             {
-                NSLayoutConstraint.Create(_subtractionButtonView,NSLayoutAttribute.Top,NSLayoutRelation.Equal,_subtractionButtonView,NSLayoutAttribute.Top,1,0),
-                NSLayoutConstraint.Create(_subtractionButtonView,NSLayoutAttribute.Bottom,NSLayoutRelation.Equal,_subtractionButtonView,NSLayoutAttribute.Bottom,1,0),
-                NSLayoutConstraint.Create(_subtractionButtonView,NSLayoutAttribute.Right,NSLayoutRelation.Equal,_subtractionButtonView,NSLayoutAttribute.Right,1,0),
-                NSLayoutConstraint.Create(_subtractionButtonView,NSLayoutAttribute.Left,NSLayoutRelation.Equal,_subtractionButtonView,NSLayoutAttribute.Left,1,0)
+                NSLayoutConstraint.Create(_subtractionButtonImage,NSLayoutAttribute.Top,NSLayoutRelation.Equal,_subtractionButtonView,NSLayoutAttribute.Top,1,0),
+                NSLayoutConstraint.Create(_subtractionButtonImage,NSLayoutAttribute.Bottom,NSLayoutRelation.Equal,_subtractionButtonView,NSLayoutAttribute.Bottom,1,0),
+                NSLayoutConstraint.Create(_subtractionButtonImage,NSLayoutAttribute.Right,NSLayoutRelation.Equal,_subtractionButtonView,NSLayoutAttribute.Right,1,0),
+                NSLayoutConstraint.Create(_subtractionButtonImage,NSLayoutAttribute.Left,NSLayoutRelation.Equal,_subtractionButtonView,NSLayoutAttribute.Left,1,0)
             });
             
             _subtractionButtonImage.Hidden = false;
